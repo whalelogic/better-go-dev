@@ -1,0 +1,15 @@
+{
+  "name": "better-go-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "cp /workspaces/better-go-dev/.vimrc ~/.vimrc && cp /workspaces/better-go-dev/.zshrc ~/.zshrc",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "go.formatTool": "gofmt",
+        "go.useLanguageServer": true
+      }
+    }
+  }
+}
